@@ -1,0 +1,46 @@
+/* Text presets */
+@use '../base/typography' as *;
+
+@mixin text-preset($font-size, $line-height, $letter-spacing, $font-family) {
+  font-size: $font-size;
+  font-weight: 400;
+  line-height: $line-height;
+  letter-spacing: $letter-spacing;
+  font-family: $font-family;
+}
+
+@mixin text-preset-1() {
+  @include text-preset(144px, 171.9%, 0, $font-bellefair);
+}
+
+@mixin text-preset-2() {
+  @include text-preset(100px, 114.6%, 0, $font-bellefair);
+}
+
+@mixin text-preset-3() {
+  @include text-preset(56px, 62.2%, 0, $font-bellefair);
+}
+
+@mixin text-preset-4() {
+  @include text-preset(32px, 36.7%, 0, $font-bellefair);
+}
+
+@mixin text-preset-5() {
+  @include text-preset(28px, 33.6%, 4px, $font-barlow-condensed);
+}
+
+@mixin text-preset-6() {
+  @include text-preset(28px, 32.1%, 0, $font-bellefair);
+}
+
+@mixin text-preset-7() {
+  @include text-preset(14px, 16.8%, 2px, $font-barlow-condensed);
+}
+
+@mixin text-preset-8() {
+  @include text-preset(16px, 19.2%, 2px, $font-barlow-condensed);
+}
+
+@mixin text-preset-9() {
+  @include text-preset(18px, 180%, 0, $font-barlow);
+}
